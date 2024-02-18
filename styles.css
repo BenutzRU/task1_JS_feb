@@ -75,7 +75,7 @@ div {
     margin-bottom: 20px; 
 }
 
-/* Стили для чекбокса */
+
 input[type="checkbox"] {
     appearance: none; 
     -webkit-appearance: none;
@@ -88,7 +88,7 @@ input[type="checkbox"] {
     transition: border-color 0.3s; 
 }
 
-/* Стили для выполненного чекбокса */
+
 input[type="checkbox"]:checked {
     border-color: #04753796; 
     background-color: #15f800; 
@@ -110,7 +110,7 @@ form {
     display: flex;
     align-items: center;
     padding: 7.5px;
-    border-radius: 15px; /* Закругленные углы формы */
+    border-radius: 15px; 
 }
 
 label {
