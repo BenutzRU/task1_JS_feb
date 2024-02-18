@@ -1,0 +1,150 @@
+
+#container {
+    margin-top: 20px; 
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    
+
+}
+
+body {
+    user-select: none; 
+    background: linear-gradient(to bottom, #001f3f, #001a35); 
+    font-family: Arial, sans-serif; 
+    color: white; 
+}
+
+table {
+    background-color: black;
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th, td {
+   
+    padding: 8px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #555;
+}
+
+tr:nth-child(odd) {
+    background-color: #555;
+}
+
+button {
+    border-radius: 10px; 
+    background-color: #1665a7; 
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    margin-left: 0.05%;
+    
+}
+
+
+button:hover {
+    border-radius: 10ps;
+    background-color: #8e44ad; 
+    box-shadow: 0 0 20px #f00ef8; 
+    
+}
+
+div {
+    margin-bottom: 20px; 
+}
+
+/* Стили для чекбокса */
+input[type="checkbox"] {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555; 
+    border-radius: 3px; 
+    outline: none; 
+    transition: border-color 0.3s; 
+}
+
+/* Стили для выполненного чекбокса */
+input[type="checkbox"]:checked {
+    border-color: #04753796; 
+    background-color: #15f800; 
+}
+input[type="checkbox"]:not(:checked) {
+    border-color: #3b3b3b96; 
+    background-color: #929292; 
+}
+
+h1 {
+    padding-top: 7.5%;
+    padding-left: 0.1%; 
+}
+
+form {
+    position: absolute;
+    top: 0.05%;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    padding: 7.5px;
+    border-radius: 15px; /* Закругленные углы формы */
+}
+
+label {
+    margin-right: 10px; 
+    margin-left: 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+input {
+  
+    padding: 8px; 
+    border: 1px solid rgba(4, 0, 255, 0.226);
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 15px;
+}
+
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1665a7; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopButton:hover {
+    background-color: #8e44ad;
+}
+
+form input {
+    color: white; /* Устанавливаем черный цвет текста для полей ввода (по умолчанию) */
+}

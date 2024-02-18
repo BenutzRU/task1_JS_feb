@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание #1</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            position: absolute; 
+            top: 0; 
+            right: 0; 
+            margin: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <form action="https://......ru" method="post">
+        <label for="login">Логин</label>
+        <input type="text" id="login" name="login" required>
+    
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+
+        <button style="padding-left: 2%; margin-left: 1%;" type="submit">Войти</button>
+    </form>
+    
+
+    <h1>Таблица со списком TODO пользователей</h1>
+    <div id="root">
+        <div id="container">
+            
+
+            <button style="margin-bottom: 10px;" onclick="methodGetTodos()">Загрузить список</button>
+            <button style="margin-bottom: 10px;" onclick="$('table tbody').children().remove(); alert('Таблица очищена!')">Очистить список</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="1" data-end="20">1-20</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="21" data-end="40">21-40</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="41" data-end="60">41-60</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="61" data-end="80">61-80</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="81" data-end="100">81-100</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="101" data-end="120">101-120</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="121" data-end="140">121-140</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="141" data-end="160">141-160</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="161" data-end="180">161-180</button>
+            <button style="background-color: #83838391;" class="pageButton" data-start="181" data-end="200">181-200</button>
+           
+
+        </div>
+        <table cellspacing="2" border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Пользователь</th>
+                    <th>Задача</th>
+                    <th>Выполнено</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </div>
+
+    <script src="./dom.js"></script>
+    <script src="./users.js"></script>
+    
+    <img src = 'https://cdn.icon-icons.com/icons2/2042/PNG/512/anime_emoji_emoticon_manga_omg_surprised_icon_124275.png'>
+    
+</html>
